@@ -230,7 +230,7 @@ def recommend_universities(resume_text):
     return recommendations
 
 def main():
-    st.warning("⚠️ **Disclaimer:** This tool is still in development and some of the features will be improved in the future. The recommendations provided are based on a limited dataset of German universities and programs.")
+    st.warning("⚠️ **Disclaimer:** This tool is still in development and some of the features will be improved in the future. The recommendations provided are based on a dataset of German universities and programs.")
     st.title("🎓 Universität Kompass")
     st.write("*AI-powered German university program recommendations based on your resume.*")
     st.write("**Upload your resume, and we'll find the best matching university programs for you!**")
