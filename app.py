@@ -231,8 +231,8 @@ def recommend_universities(resume_text):
 
 def main():
     st.title("🎓 Universität Kompass")
-    st.write("AI-powered German university program recommendations based on your resume.")
-    st.write("Upload your resume, and we'll find the best matching university programs for you!")
+    st.write("*AI-powered German university program recommendations based on your resume.*")
+    st.write("**Upload your resume, and we'll find the best matching university programs for you!**")
 
     uploaded_file = st.file_uploader("📂 Upload your resume (PDF format)", type="pdf")
 
