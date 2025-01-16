@@ -24,13 +24,13 @@ client = MongoClient(MONGO_URI)
 # Database for contacts and deadlines
 db_contacts = client["Kompass_daad_university_data_master_en"]
 collection_contacts = db_contacts["programs"]
-
 # Set OpenAI API Key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Load FAISS index and university metadata
 faiss_index_path = "data/faiss_universities.pkl"
 metadata_path = "data/merged_program_data.csv"
+
 
 # Load FAISS index
 if os.path.exists(faiss_index_path):
@@ -230,7 +230,8 @@ def recommend_universities(resume_text):
     return recommendations
 
 def main():
-    st.title("🎓 AI-Powered University Recommendation System")
+    st.title("🎓 Universität Kompass")
+    st.write("AI-powered German university program recommendations based on your resume.")
     st.write("Upload your resume, and we'll find the best matching university programs for you!")
 
     uploaded_file = st.file_uploader("📂 Upload your resume (PDF format)", type="pdf")
