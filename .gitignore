@@ -1,0 +1,7 @@
+# Create .gitignore file
+__pycache__/
+*.pyc
+.env
+.DS_Store
+*.log
+kompas-env/
