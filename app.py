@@ -18,6 +18,7 @@ import re
 load_dotenv()
 MONGO_URI = st.secrets["MONGO_URI"]
 
+
 # Connect to MongoDB
 client = MongoClient(MONGO_URI)
 
